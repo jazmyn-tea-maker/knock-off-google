@@ -7,7 +7,7 @@
         position: relative;
         display: flex;
         justify-content: center;
-        top: 2vh;
+        top: -1vh;
     }
 
     a {
@@ -19,7 +19,7 @@
         display: block;
         margin: auto;
         bottom: 20px;
-        top: -10px;
+        top: -24px;
         background-color: rgb(255, 255, 255);
         border-color:rgb(212, 212, 212);
         border-style: solid;
@@ -53,6 +53,7 @@
         outline: none;
     }
 
+
     .button-div {
         display: flex;
         justify-content: center;
@@ -65,6 +66,7 @@
         margin: 10px;
         border-radius: 4px;
         border: none;
+        background-color: rgb(250, 250, 250);
         color:rgb(75, 75, 75);
     }
 
@@ -76,37 +78,141 @@
         color: black;
     }
 
+    
+
+    .links-app-bar {
+        display: flex;
+        padding-bottom: 0px;
+    }
+
+    .links-div {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        height: 10px;
+        top: 15px;
+        left: 17px;
+        font-family: arial, sans-serif;
+        letter-spacing: -.5px;
+        font-size: 13px;
+    }
+
+    .about-store-links {
+        display: block;
+    }
+
+    .woomail-images-links {
+        display: block;
+        padding-right: 25px;
+    }
+
+    .app-dots {
+        display: block;
+        margin: auto;
+        padding-top: 9px;
+        width: 25px;
+        height: 25px;
+        fill: gray;
+    }
+
+    .app-dots-div {
+        display: block;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+
+    .app-dots-div:hover {
+        display: block;
+        background-color: rgb(241, 241, 241);
+    }
+
+    .sign-in-btn {
+        white-space: nowrap;
+        padding: 8px 15px 10px 15px;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-right: 5px;
+        text-align: center;
+        background-color: #1a73e8;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+    
     @media (max-width: 600px) {
         .search-box {
             width: 96%;
+        }
+        .app-dots-div {
+            width: 50px;
+        }
+        .links-div {
+            width: 72%;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .links-div {
+            width: 84%;
         }
     }
 
 </style>
 <html lang="en">
+    
+<body>
+    <div class='links-app-bar'>
+        <div class='links-div'>
+            <div class='about-store-links'>
+                <a href='#' style='padding-right: 15px;'>About</a>
+                <a href='#'>Store</a>
+            </div>
+            <div class='woomail-images-links'>
+            <a href='#' style='padding-right: 15px;'>WooMail</a>
+            <a href='#'>Images</a>
+            </div>
+        </div>
+        <div class='app-dots-div'>
+            <div class='app-dots'>
+                <svg focusable="false" viewBox="0 0 24 24">
+                    <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                </svg>
+            </div>
+        </div>
+        <label for='sign-in'>
+            <button class='sign-in-btn' name='sign-in'>Sign In</button>
+        </label>
+    </div>
+    
     <header>
-                
             <h1>
                 <a href='http://127.0.0.1:5500/index.html'>
                     <span style='color:rgb(3, 131, 216); font-size: 85px;'>W</span><span style='color:rgb(211, 9, 9);'>o</span><span style='color:rgb(236, 207, 38);'>o</span><span style='color:rgb(3, 131, 216);'>b</span><span style='color:rgb(31, 156, 20);'>l</span><span style='color:rgb(211, 9, 9);'>e</span>
                 </a>
             </h1>
-        
     </header>    
     <div class='search-box'>
             <svg class='mag-glass-icon' xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24">
                 <path style='fill: #9aa0a6;' d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 
                 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'></path>
             </svg>
-    <form>
-        <label for="searching">    
-            <input class="search-bar no-outline" type="search" name="searching" placeholder="What'cha wanna know?">
-        </label>
-    </form>
-        
+        <form>
+            <label for="searching">    
+                <input class="search-bar no-outline" type="search" name="searching" placeholder="What'cha wanna know?">
+            </label>
+        </form>
     </div>
+</div>
     <div class='button-div'>
         <button class='btn-style btn-hover'>Wooble Search</button>
         <button class='btn-style btn-hover'>I'm Feeling Lucky</button>
     </div>
+</body>
+    
 </html>
