@@ -86,6 +86,7 @@
     .links-app-bar {
         display: flex;
         padding-bottom: 0px;
+        color: black;
     }
 
     .links-div {
@@ -122,83 +123,23 @@
         padding-right: 25px;
     }
 
-.about-link:hover {
-    text-decoration: underline;
-}
-
-.store-link:hover {
-    text-decoration: underline;
-}
-
-.woomail-link:hover {
-    text-decoration: underline;
-}
-
-.images-link:hover {
-    text-decoration: underline;
-}
-
-.about-link:visited {
+.about-link, .store-link, .woomail-link, .images-link {
     color: black;
 }
 
-.store-link:visited {
-    color: black;    
+.about-link:hover, .store-link:hover, .woomail-link:hover, .images-link:hover {
+    text-decoration: underline;
 }
 
-.woomail-link:visited {
+.about-link:visited, .store-link:visited, .woomail-link:visited, .images-link:visited {
     color: black;
 }
 
-.images-link:visited {
-    color: black;
-}
-
-.ad-link:visited {
+.ad-link:visited, .bus-link:visited, .how-link:visited, .pri-link:visited, .ter-link:visited, .set-link:visited {
     color: gray;
 }
 
-.bus-link:visited {
-    color: gray;
-}
-
-.how-link:visited {
-    color: gray;
-}
-
-.pri-link:visited {
-    color: gray;
-}
-
-.ter-link:visited {
-    color: gray;
-}
-
-.set-link:visited {
-    color: gray;
-}
-
-.ad-link:hover {
-    text-decoration: underline;
-}
-
-.bus-link:hover {
-    text-decoration: underline;
-}
-
-.how-link:hover {
-    text-decoration: underline;
-}
-
-.pri-link:hover {
-    text-decoration: underline;
-}
-
-.ter-link:hover {
-    text-decoration: underline;
-}
-
-.set-link:hover {
+.ad-link:hover, .bus-link:hover, .how-link:hover, .pri-link:hover, .ter-link:hover, .set-link:hover {
     text-decoration: underline;
 }
 
@@ -261,12 +202,14 @@
         justify-self: start;
         align-self: center;
         margin-left: 30px;
+        color: gray;
     }
 
     .second-links-bottom {
         justify-self: end;
         align-self: center;
         margin-right: 20px;
+        color: gray;
     }
     
     @media (max-width: 600px) {
