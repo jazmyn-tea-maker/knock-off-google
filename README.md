@@ -7,3 +7,5 @@ Hopefully, I'll have a basic understanding of how to lay out a website and a few
 
 -- Final thoughts--
 I have found a new passion! So fun to create and design. I took some liberties because just replicating Google down to brass tacks felt so boring. I have a firmer grasp on concepts now, and I have learned many new ones! I'm very proud of myself, and this has shown me what is potential. It has shown me that this is my career choice! (All of this is mainly for future me to look back on. If you're reading, future me, keep up the great work, and take breaks when needed. <3)
+
+Live Preview: https://jazmyn-tea-maker.github.io/knock-off-google/
